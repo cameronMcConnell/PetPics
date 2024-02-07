@@ -1,0 +1,103 @@
+header {
+  background-color: #107aba;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Sarina;
+}
+
+.logo {
+  color: #fff;
+  font-size: 2.5em;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  column-gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Sarina;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-list button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  color: #fff;
+  font-weight: bold;
+}
+
+.mobile-menu-list li {
+  padding: 10px 0 10px 10px;
+}
+
+.mobile-menu-list button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  color: #fff;
+  font-weight: bold;
+}
+
+.banner {
+  width: 100%;
+  background-color: #f4bfc7;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  opacity: 30%;
+}
+
+/* Mobile menu styles */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .mobile-menu {
+    background-color: #107aba;
+  }
+
+  .menu-list.show {
+    display: flex;
+  }
+
+  .menu-list li {
+    margin: 10px 0;
+  }
+
+  .menu {
+    display: none;
+  }
+}

@@ -1,0 +1,48 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.page-number-container p {
+  font-size: 2em;
+  color: black;
+  margin: 0;
+}
+
+.page-number-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5em;
+}
+
+.arrow-button {
+  background: none;
+  border: none;
+  width: 4em;
+  cursor: pointer;
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5em;
+}
+
+/* Additional styles for responsiveness */
+@media screen and (max-width: 600px) {
+  .fixed-footer {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}

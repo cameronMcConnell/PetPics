@@ -1,0 +1,9 @@
+@font-face {
+  font-family: Sarina;
+  src: url('./fonts/Sarina-Regular.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}

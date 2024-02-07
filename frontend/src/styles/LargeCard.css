@@ -1,0 +1,41 @@
+.large-card-container {
+  height: 100vh;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.return-container {
+  position: fixed;
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+
+.padding10px {
+  padding: 10px;
+}
+
+.large-card {
+  max-width: 300px; /* Adjust the maximum width as per your design */
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.large-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.large-card-content {
+  padding: 15px;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}

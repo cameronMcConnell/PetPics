@@ -1,0 +1,54 @@
+.card {
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card .heart {
+  width: 100%;
+  height: auto;
+}
+
+.image-button {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.rating-container {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 1em;
+}
+
+.heart-button {
+  width: 10%;
+  height: auto;
+  background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  margin: 0;
+}
+
+.card-content p {
+  margin: 8px 0;
+  color: #555;
+}
