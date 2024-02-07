@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Heart from '../imgs/heart.svg';
-import LeftArrow from '../imgs/arrow-left.svg';
+import Heart from './imgs/heart.svg';
+import LeftArrow from './imgs/arrow-left.svg';
 import '../styles/LargeCard.css';
 
 /*

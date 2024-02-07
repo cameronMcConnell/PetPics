@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Card from './Card';
 import LargeCard from './LargeCard';
-import LeftArrow from '../imgs/arrow-left.svg';
-import RightArrow from '../imgs/arrow-right.svg';
+import LeftArrow from './imgs/arrow-left.svg';
+import RightArrow from './imgs/arrow-right.svg';
 import data from '../data/data.json';
 import '../styles/Home.css';
 

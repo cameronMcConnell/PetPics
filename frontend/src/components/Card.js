@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Heart from '../imgs/heart.svg';
+import Heart from './imgs/heart.svg';
 import '../styles/Card.css';
 
 /*
