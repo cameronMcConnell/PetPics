@@ -51,7 +51,7 @@ const Home = ({ setHomePageNumber, homePageNumber, isMobileMenuVisible, setMobil
       <div>
         <div className='card-container'>
           {data[homePageNumber].map((obj) => (
-            <Card {...obj} 
+            <Card key={obj.name} {...obj} 
               setHasFullscreen={setHasFullscreen} 
               setFullscreenData={setFullscreenData} 
               setScrollHeight={setScrollHeight} 

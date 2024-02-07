@@ -1,25 +1,16 @@
-import { useState } from 'react';
 import Heart from './imgs/heart.svg';
+import Attack from './imgs/attack.svg';
+import Defense from './imgs/defense.svg';
 import '../styles/Card.css';
 
 /*
 **  The way this component functions will probably change,
 **  leave uncommented until then
 */
-const Card = ({ imageUrl, name, likes, setHasFullscreen, setFullscreenData, setScrollHeight, setMobileMenuVisible }) => {
-  const [imageLikes, setImageLikes] = useState(likes);
-  const [hasLiked, setHasLiked] = useState(false);
-
-  const handleLike = () => {
-    if (!hasLiked) {
-      setImageLikes((prevLikes) => prevLikes + 1);
-      setHasLiked(true);
-    } 
-  }
-
+const Card = ({ imageUrl, name, health, damage, defense, setHasFullscreen, setFullscreenData, setScrollHeight, setMobileMenuVisible }) => {
   const handleFullScreen = () => {
     setMobileMenuVisible(false);
-    setFullscreenData({imageUrl: imageUrl, name: name, likes: likes});
+    setFullscreenData({imageUrl, name, health, damage, defense});
     setScrollHeight(window.scrollY);
     setHasFullscreen(true);
   }
@@ -31,11 +22,19 @@ const Card = ({ imageUrl, name, likes, setHasFullscreen, setFullscreenData, setS
       </button>
       <div className="card-content">
         <h3>{name}</h3>
-        <div className="rating-container">
-          <button className="heart-button" onClick={handleLike}>
-            <img className="heart" src={Heart} alt=""/>
-          </button>
-          <p key={name}>{imageLikes}</p>
+        <div className="stats-container">
+          <div className="stat-container">
+            <img className="stat-icon" src={Heart} alt=""/>
+          </div>
+          <p>{health}</p>
+          <div className="stat-container">
+            <img className="stat-icon" src={Defense} alt=""/>
+          </div>
+          <p>{defense}</p>
+          <div className="stat-container">
+            <img className="stat-icon" src={Attack} alt=""/>
+          </div>
+          <p>{damage}</p>
         </div>
       </div>
     </div>
