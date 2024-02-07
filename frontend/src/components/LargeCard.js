@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Heart from './imgs/heart.svg';
 import Attack from './imgs/attack.svg';
 import Defense from './imgs/defense.svg';
