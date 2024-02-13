@@ -1,0 +1,28 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-info {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-section {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .app-info {
+    padding: 10px;
+  }
+
+  .info-section {
+    margin-top: 10px;
+  }
+}
