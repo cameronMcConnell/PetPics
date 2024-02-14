@@ -17,6 +17,15 @@
   margin-top: 20px;
 }
 
+.header-img {
+  width: 2em;
+}
+
+.about-header {
+  display: flex;
+  column-gap: 1em;
+}
+
 @media only screen and (max-width: 768px) {
   .app-info {
     padding: 10px;

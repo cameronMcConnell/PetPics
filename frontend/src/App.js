@@ -63,7 +63,7 @@ function App() {
 
   return (
     <div className="App">
-      <header>
+      <header className="app-header">
         <div className="logo">PetPics</div>
         <button className="menu-icon" onClick={toggleMobileMenu}>
           ☰
